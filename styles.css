@@ -1,0 +1,238 @@
+@import url("https://fonts.googleapis.com/css?family=Roboto:700");
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+nav{
+    background-color: #000;
+    width:100%;
+    position:fixed;
+    z-index: 5;
+}
+nav ul{
+    display: flex;
+    justify-content: center;
+}
+nav ul li{
+    display: inline-block;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 3px;
+}
+nav ul li a{
+    
+    font-size: 20px;
+    font-family: "roboto";
+    color: white;
+    text-decoration: none;
+    text-transform: uppercase;
+    display: block;
+    padding: 10px;
+    transition: .5s;
+}
+nav ul li a.active{
+    color:#50cdff;
+}
+
+.front{
+    font-size: 20px;
+}
+
+li a:hover{
+    color: #50cdff;
+    border-radius: 2px;
+}
+
+/* ################# MAIN  ################# */
+/*https://source.unsplash.com/random/2500x1800*/
+
+body{
+    width: 100%;
+    font-family: 'Montserrat Alternates', sans-serif;
+}
+main{
+    display: inline;
+}
+
+main .welcome{
+    display:flex;
+    justify-content: flex-start;
+    color:white;
+    overflow: hidden;
+    align-items: center;
+    top: 0;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    background-image: url(https://source.unsplash.com/random/2500x2500);
+    width: 100%;
+    height: 100vh;
+
+}
+
+.welcome img{
+    width: 100%;
+    height: 100%;
+    padding: 20% 5% 20% 10%;
+}
+
+.welcome .description h1{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 60px;
+}
+
+.welcome .description p{
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 100;
+    font-size:25px;
+}
+
+@media (max-width:1100px){
+    main .welcome{
+        height: 50vh;
+    }
+    .welcome img{
+        width: 300px;
+    }
+    .welcome .description h1{
+        font-size: 50px;
+    }
+    .welcome .description p{
+        font-size:20px;
+    }
+}
+
+@media (max-width:800px){
+    main .welcome{
+        height: 70vh;
+    }
+    .welcome img{
+        width: 250px;
+    }
+    .welcome .description h1{
+        font-size: 40px;
+    }
+    .welcome .description p{
+        font-size:15px;
+    }
+}
+
+@media (max-width:500px){
+    .welcome img{
+        width: 120px;
+    }
+    .welcome .description h1{
+        font-size: 30px;
+    }
+    .welcome .description p{
+        font-size:13px;
+    }
+}
+
+/*################################## description of pages #####################################*/
+
+.skew{
+    transform: skew(0deg,-5deg);
+    background-color: #fff;
+    margin-top:-100px;
+    width: 100%;
+    z-index: 3;
+}
+article{
+    padding: 5% 20% 0% 20%;
+    transform: skew(0deg, 5deg);
+    text-align: justify;
+}
+
+article h2{
+    text-transform: uppercase;
+    text-align: center;
+}
+
+article p{
+    padding: 3% 10% 0% 10%;
+}
+@media (max-width:800px){
+    article {
+        padding: 0;
+        padding-top: 60px;
+    }
+    article h2{
+        font-size: 20px;
+    }
+    
+    article p{
+        font-size: 15px;
+    }
+}
+
+/*######################### PAGES #########################*/
+
+.pages{
+    position: sticky;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-gap: 50px;
+    padding-top: 50px;
+    padding-left: 100px;
+    padding-right: 100px;
+    align-items: center;
+    z-index: 4;
+}
+
+@media (max-width:1100px){
+    .pages{
+        grid-template-columns: repeat(3,1fr);
+        grid-gap: 30px;
+    }
+}
+
+@media (max-width:800px){
+    .pages{
+        grid-template-columns: repeat(2,1fr);
+        grid-gap: 5px;
+        padding: 30px 2% 0% 2%;
+    }
+}
+
+@media (max-width: 500px){
+    .pages{
+        grid-template-columns: repeat(1,1fr);
+        grid-gap: 10px;
+        padding: 30px 2% 0% 2%;
+    }
+}
+
+.pages a{
+    padding: 1%;
+}
+.pages a img{
+    box-shadow: 2px 5px 10px 0px #000;
+    width: 100%;
+}
+
+.section{
+    height: 50vh;
+    background-image: url(https://source.unsplash.com/random/2400x1700);
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+}
+.section{
+    width: 100%;
+}
+
+/*########################### diagonal de abajo #############################*/
+.skew2{
+    margin-top: 50px;
+    position: relative;
+    top: 0;
+    left: 0;
+    background-size: cover;
+    border-width: 15vh 100vw 0 0;
+    border-style: solid;
+    border-color:  #fff transparent   transparent  transparent ;
+}
+
+/*#############################################################################*/
