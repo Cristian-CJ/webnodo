@@ -38,7 +38,7 @@ nav ul li a.active{
     font-size: 20px;
 }
 
-li a:hover{
+nav li a:hover{
     color: #50cdff;
     border-radius: 2px;
 }
@@ -177,6 +177,7 @@ article p{
     padding-top: 50px;
     padding-left: 100px;
     padding-right: 100px;
+    padding-bottom: 100px;
     align-items: center;
     z-index: 4;
 }
@@ -210,6 +211,7 @@ article p{
 .pages a img{
     box-shadow: 2px 5px 10px 0px #000;
     width: 100%;
+
 }
 
 .section{
@@ -219,20 +221,69 @@ article p{
     background-size: cover;
     background-position: center;
 }
-.section{
-    width: 100%;
-}
+
 
 /*########################### diagonal de abajo #############################*/
+
 .skew2{
-    margin-top: 50px;
     position: relative;
     top: 0;
     left: 0;
     background-size: cover;
-    border-width: 15vh 100vw 0 0;
+    border-width: 15vh 98vw 0 0;
     border-style: solid;
     border-color:  #fff transparent   transparent  transparent ;
 }
 
-/*#############################################################################*/
+/*################################## FOOTER #########################################*/
+
+footer{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-gap: 40px;
+    background:#0f0f0f;
+    width: 100%;
+    position: relative;
+    bottom: 0;
+    padding-bottom: 50px;
+}
+.colum-f{
+    padding-left: 50px;
+}
+.colum-f h3{
+    color: #7e7e7e;
+    font-size: 25px;
+    padding-top: 30px;
+    padding-bottom: 10px;
+}
+.colum-f p{
+    
+    color: #7e7e7e;
+}
+.colum-f a{
+    padding: 2px;
+    color: #7e7e7e;
+    display:flex;
+    flex-direction: row;
+    text-decoration: none;
+}
+.colum-f a:hover{
+    color: white;
+}
+.colum-f a img{
+    margin-right: 5px;
+    width: 20px;
+    color: white;
+    filter: contrast(0%);
+}
+
+@media (max-width:1100px){
+    footer{
+        grid-template-columns: repeat(2,1fr);
+    }
+}
+@media (max-width:500px){
+    footer{
+        grid-template-columns: repeat(1,1fr);
+    }
+}
