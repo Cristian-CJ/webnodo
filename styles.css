@@ -65,7 +65,7 @@ main .welcome{
     background-repeat: no-repeat;
     background-position: center;
     background-attachment: fixed;
-    background-image: url(https://source.unsplash.com/random/2500x2500);
+    background-image: url(images/gplus1510372039.jpg);
     width: 100%;
     height: 100vh;
 
@@ -216,7 +216,7 @@ article p{
 
 .section{
     height: 50vh;
-    background-image: url(https://source.unsplash.com/random/2400x1700);
+    background-image: url(images/Military-aircraft-flight-smoke-sunset_3840x2160.jpg);
     background-attachment: fixed;
     background-size: cover;
     background-position: center;
