@@ -7,116 +7,119 @@
 }
 
 nav{
-    background-color: #ffffff;
+    background-color: #5cdb95 ;
     width:100%;
     z-index: 5;
-}
-nav ul{
     display: flex;
-    justify-content: center;
-}
-nav ul li{
-    display: inline-block;
-    margin: 3px;
-}
-nav ul li a{
-    color: white;
-    text-decoration: none;
-    text-transform: uppercase;
-    display: block;
+    justify-content: flex-start;
+    display: flex;
+    flex-direction: column;
+    align-content: flex-start;
     padding: 10px;
+    font-size: 25px;
+    padding: 20px 30px;
+    color: #edf5e1;
 }
-nav ul li a.active{
-    color:#50cdff;
-}
-
-.front{
-    font-size: 20px;
-}
-
-nav li a:hover{
-    color: #50cdff;
-    border-radius: 2px;
+nav p{
+    margin-top: -10px;
 }
 
-/* ################# MAIN  ################# */
-/*https://source.unsplash.com/random/2500x1800*/
-
-
-/*######################### PAGES #########################*/
-section{
-    height: 80vh;
-    background-color: #202020;
-}
-
-
-@media (max-width:1100px){
-    .pages{
-        grid-template-columns: repeat(3,1fr);
-        grid-gap: 30px;
-    }
-}
-
-
-
-/*################################## FOOTER #########################################*/
-
-h3{
+#logo{
     font-family: "Aldrich", sans-serif;
-    font-size: 50px;
-    color: #000000;
-    font-weight: 400;
+    font-size: 60px;
+    color: #edf5e1;
+    font-weight: 500;
     font-style: normal;
     text-transform: none;
     letter-spacing: 0;
     display: flex;
 }
-sub{
-    color: #666666;
-    font-size: 10px;
-    padding-top: 12px;
-}
-footer{
-    display: grid;
-    grid-template-columns: repeat(4,1fr);
-    grid-gap: 20px;
-    background:#ffffff;
+
+/* ################# MAIN  ################# */
+/*https://source.unsplash.com/random/2500x1800*/
+
+img{
+    border-radius: 100%;
     width: 100%;
-    position: relative;
-    bottom: 0;
-    padding-bottom: 50px;
-}
-.colum-f{
-    padding-left: 50px;
-}
-.colum-f h3{
-    color: #7e7e7e;
-    font-size: 25px;
-    padding-top: 30px;
-    padding-bottom: 10px;
-}
-.colum-f p{
-    
-    color: #7e7e7e;
-}
-.colum-f a{
-    padding: 2px;
-    color: #7e7e7e;
-    display:flex;
-    flex-direction: row;
-    text-decoration: none;
-}
-.colum-f a:hover{
-    color: #000000;
+    height: auto;
+    padding: 5px;
+    background-color: #ffffff;
+    width: 100px;
+    height: 100px;
 }
 
-@media (max-width:1100px){
-    footer{
+
+
+/*######################### PAGES #########################*/
+
+section{
+    background-color: #5cdb95;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-gap: 20px;
+    padding: 30PX;
+}
+
+@media (max-width:1200px){
+    section{
         grid-template-columns: repeat(2,1fr);
     }
 }
-@media (max-width:500px){
-    footer{
+
+@media (max-width:900px){
+    section{
         grid-template-columns: repeat(1,1fr);
     }
+}
+@media (max-width:500px){
+    section div a{
+        font-size: 10px;
+    }
+}
+section div a h3{
+    padding-left: 20px;
+}
+
+section div a{
+    text-decoration: none;
+    color:#edf5e1;
+    display: flex;
+    font-size: 30px;
+}
+
+#tagg{
+    background-color: #05386b;
+    border-radius: 10px;
+    padding: 10px;
+    
+}
+
+
+
+
+
+
+/*################################## FOOTER #########################################*/
+
+footer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-emphasis: none;
+    text-decoration: none;
+    background:#05386b;
+    width: 100%;
+    position: relative;
+    bottom: 0;
+    padding: 10px;
+    box-shadow: -30px -30px -20px 20px #05386bbd;
+    
+}
+footer h3{
+    font-size: 32px !important;
+}
+
+footer a{
+    text-decoration: none;
+    color: #8ee4af;
 }
