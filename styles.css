@@ -72,9 +72,10 @@ section{
     }
 }
 @media (max-width:500px){
-    section div a{
-        font-size: 10px;
+    section div a h3{
+        font-size: 20px;
     }
+
 }
 section div a h3{
     padding-left: 20px;
