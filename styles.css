@@ -35,7 +35,6 @@ nav p{
     display: flex;
 }
 
-/* ################# MAIN  ################# */
 /*https://source.unsplash.com/random/2500x1800*/
 
 img{
@@ -47,10 +46,6 @@ img{
     width: 100px;
     height: 100px;
 }
-
-
-
-/*######################### PAGES #########################*/
 
 section{
     background-color: #5cdb95;
@@ -94,13 +89,6 @@ section div a{
     padding: 10px;
     
 }
-
-
-
-
-
-
-/*################################## FOOTER #########################################*/
 
 footer{
     display: flex;
