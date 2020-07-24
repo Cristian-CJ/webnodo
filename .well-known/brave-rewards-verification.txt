@@ -1,4 +1,0 @@
-This is a Brave Rewards publisher verification file.
-
-Domain: webnodo.com
-Token: 8af2800ea065d4626e19e94bf3d716534753f9509d34e3b28f53659f2f558d32
